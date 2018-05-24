@@ -12,7 +12,7 @@ Monobehaviour that takes in values for number of meshes in a grid (width x heigh
 ## InstancedMaterial.mat
 Material that uses the InstanceColorShader to draw the instances of the mesh
 
-### InstancingScene.unity
+## InstancingScene.unity
 Sample scene that draws 200 x 200 prisms in white color (as shown below)
 
 ![Instanced Prisms](http://coding.javdev.com/tests/instancing/instanced_prisms.png)
