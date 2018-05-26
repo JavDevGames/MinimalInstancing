@@ -31,10 +31,12 @@ New functionality:
 
 #### Material Property Block
 This controls the color setting on a per instance basis. Using this, we can have multiple colors on the same mesh, and keep them batched using Graphics.DrawMeshInstanced().
-  Calling
-  `propertyBlock.SetVectorArray("_Color", batchedColorArray);` 
-  `Graphics.DrawMeshInstanced(mMeshFilter.sharedMesh, 0, meshMaterial, batchedMatrices, batchCount, propertyBlock);` 
-  ensures that can pass the property block configured with an array down to the Shader so that it can extract the data per instance.
+Calling
+
+    propertyBlock.SetVectorArray("_Color", batchedColorArray);
+    Graphics.DrawMeshInstanced(mMeshFilter.sharedMesh, 0, meshMaterial, batchedMatrices, batchCount, propertyBlock);
+
+ensures that can pass the property block configured with an array down to the Shader so that it can extract the data per instance.
 
 ### InstancedMaterial.mat
 No chance from Part01
